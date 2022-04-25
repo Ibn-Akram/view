@@ -1,0 +1,26 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-4 bt" >
+            <button class="btn btn-info text-center" (click)="showHeaderText(root_header)"> Change Color</button>
+            <button class="btn btn-success text-center" (click)="com_2.showInfo()">Call Alert </button>
+            <button class="btn btn-warning" (click)="dont(fam)">Change</button>
+        </div>
+        <div class="col-8 at">
+            <h2 #root_header > View Child</h2>
+
+            {{root_header.innerText}}
+
+            <div  class="card bg-info">
+                <div class="card-title">This is a Card</div>
+                <div class="card-body">
+                    <img #fam class="w-100" src="../../assets/alberto-casetta-REKXJ7JhwiI-unsplash.jpg" alt="">
+                </div>
+                <div class="card-footer">
+                    This is a family
+                </div>
+            </div>
+            <app-nd #com_2 ></app-nd>
+        </div>
+    </div>
+</div>
